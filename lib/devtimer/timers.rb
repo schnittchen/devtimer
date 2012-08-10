@@ -22,7 +22,7 @@ module Devtimer
     end
 
     def inspect
-      return "No timers defined! Use timers.new 'name' to ..." if empty?
+      return "No timers defined! Use timers.new 'name' to create one." if empty?
       map(&:short_summary).prepend("Timers:").join"\n"
     end
 
